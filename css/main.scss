@@ -24,18 +24,20 @@
 html
 {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
+
 
 /* Home Background */
 body
 {
-
+    padding: 0px;
+    margin: 0px;
     //position: relative;
-    height: 140vh;
+    height: 100%;
     width: 100%;
     padding-top: 50px;
-    margin: 0 auto;
+    
     
     h1, h2 {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -148,9 +150,9 @@ img {
 /* Home for introduction page */
 .home
 {
-    position: relative;
-    height: 100vh;
-    width: 100%;
+    //position: relative;
+    height: 120vh;
+
     color: var(--white);
 
     /* Buttons */
@@ -178,22 +180,14 @@ img {
     }
 
 }
-/*
-@media (max-width: 768px)
-{
-    .btn-warning, .btn-outline-light {
-        .col {
-
-        }
-    }
-}*/
 
 /* Sections to be customized */
 
 #section
 {
+
     display: flex;
-    height: 250vh;
+    height: 140vh;
     width: 100%;
     color: var(--black);
     text-align: center; 
@@ -227,23 +221,41 @@ img {
 
 }
 
-@media (min-width: 768px)
+@media only screen and (max-device-width: 390px) and (orientation: portrait) {
+    #section {
+        //position: relative;
+        display: inline;
+    }
+    /*section .row{
+        position: relative;
+    }*/
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+    #section {
+        position: relative;
+        display: inline;
+        
+    }
+    /*section .row{
+        position: relative;
+    }*/
+}
+/*
+@media screen and (min-width: 768px)
 {
     #section {
         justify-content: center;
         height: 150vh;
         width: 100%;
     }
-}
+}*/
 
 /* About */
 .about
 {
-    .left {
-        left: 150px;
-    }
 
-    .right {
+    .profile {
     
         p {
             text-align: start;
@@ -287,7 +299,7 @@ img {
         font-size: 1.2rem;
     }
 
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
     {
         .about {
             display: flex;
@@ -395,7 +407,7 @@ img {
 }
 
 
-@media (max-width: 768px)
+@media screen and (max-width: 768px)
 {
     .skills .progress-bars {
         display: inline-block;
@@ -408,6 +420,7 @@ img {
 /* Services */
 .service
 {
+
     .services {
         display: inline-block;
         height: 100%;
@@ -435,12 +448,11 @@ img {
         }
     }
 
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
     {
         .service {
             display: flex;
             height:5px;
-
         }
     }
 }
@@ -449,6 +461,7 @@ img {
 
 .portfolio
 {
+
     .portfolios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -519,7 +532,7 @@ img {
         }
     }
 
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 768px){
         .portfolios {
             display: flex;
             width:auto;
@@ -531,8 +544,9 @@ img {
 
 .contact
 {
+
     .contact-form {
-    //display: inline-block;
+        display: flex;
         height: 100%;
         width: 100%;
         font-size: 1.2rem;
@@ -540,12 +554,12 @@ img {
         border: 5px outset var(--orange);
     }
 
-    @media (max-width: 768px)
-    {
-        .row {
-            display: flex;
-            width: auto;
-        }
+}
+
+@media screen and (max-width:390) {
+    .contact .contact-form {
+        display:fixed;
+        width: auto;
     }
 }
 

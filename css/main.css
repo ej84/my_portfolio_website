@@ -21,15 +21,16 @@
 /* html has smooth scroll behavior and non overflow-x that only allows vertical scroll. */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* Home Background */
 body {
-  height: 140vh;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
   width: 100%;
   padding-top: 50px;
-  margin: 0 auto;
 }
 body h1, body h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -119,9 +120,7 @@ img {
 /* Main Contents */
 /* Home for introduction page */
 .home {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  height: 120vh;
   color: var(--white);
   /* Buttons */
 }
@@ -141,19 +140,10 @@ img {
   text-decoration: none;
 }
 
-/*
-@media (max-width: 768px)
-{
-    .btn-warning, .btn-outline-light {
-        .col {
-
-        }
-    }
-}*/
 /* Sections to be customized */
 #section {
   display: flex;
-  height: 250vh;
+  height: 140vh;
   width: 100%;
   color: var(--black);
   text-align: center;
@@ -182,18 +172,34 @@ img {
   font-size: 4.3rem;
 }
 
-@media (min-width: 768px) {
+@media only screen and (max-device-width: 390px) and (orientation: portrait) {
   #section {
-    justify-content: center;
-    height: 150vh;
-    width: 100%;
+    display: inline;
   }
+  /*section .row{
+      position: relative;
+  }*/
 }
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+  #section {
+    position: relative;
+    display: inline;
+  }
+  /*section .row{
+      position: relative;
+  }*/
+}
+/*
+@media screen and (min-width: 768px)
+{
+    #section {
+        justify-content: center;
+        height: 150vh;
+        width: 100%;
+    }
+}*/
 /* About */
-.about .left {
-  left: 150px;
-}
-.about .right p {
+.about .profile p {
   text-align: start;
   font-size: 1.5rem;
 }
@@ -220,7 +226,7 @@ img {
   text-align: center;
   font-size: 1.2rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about .about {
     display: flex;
     width: auto;
@@ -304,7 +310,7 @@ img {
   width: 83%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .skills .progress-bars {
     display: inline-block;
     width: 100%;
@@ -336,7 +342,7 @@ img {
 .service .services p {
   font-size: 1.2rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .service .service {
     display: flex;
     height: 5px;
@@ -414,7 +420,7 @@ img {
   opacity: 1;
   transform: scale(1);
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .portfolio .portfolios {
     display: flex;
     width: auto;
@@ -423,19 +429,20 @@ img {
 
 /* Contact Me */
 .contact .contact-form {
+  display: flex;
   height: 100%;
   width: 100%;
   font-size: 1.2rem;
   text-align: center;
   border: 5px outset var(--orange);
 }
-@media (max-width: 768px) {
-  .contact .row {
-    display: flex;
+
+@media screen and (max-width: 390) {
+  .contact .contact-form {
+    display: fixed;
     width: auto;
   }
 }
-
 /* Animation Variables */
 .fadeInRight img {
   background-size: cover;
