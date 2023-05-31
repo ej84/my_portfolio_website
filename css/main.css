@@ -141,6 +141,15 @@ img {
   text-decoration: none;
 }
 
+/*
+@media (max-width: 768px)
+{
+    .btn-warning, .btn-outline-light {
+        .col {
+
+        }
+    }
+}*/
 /* Sections to be customized */
 #section {
   display: flex;

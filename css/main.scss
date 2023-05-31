@@ -83,7 +83,6 @@ img {
 .api {
     display: inline-block;
     justify-content: center;
-    
 }
 
 .count
@@ -177,7 +176,17 @@ img {
         }
 
     }
+
 }
+/*
+@media (max-width: 768px)
+{
+    .btn-warning, .btn-outline-light {
+        .col {
+
+        }
+    }
+}*/
 
 /* Sections to be customized */
 
