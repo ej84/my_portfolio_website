@@ -65,8 +65,17 @@ img {
   display: block;
 }
 
+.api {
+  display: inline-block;
+  justify-content: center;
+}
+
 .count {
   font: 800 40px system-ui;
+}
+
+.borderline {
+  border: 5px outset var(--orange);
 }
 
 /* Rows Behavior in Global */
@@ -176,6 +185,7 @@ img {
   left: 150px;
 }
 .about .right p {
+  text-align: start;
   font-size: 1.5rem;
 }
 .about .row .col-lg-5, .about .col-md-10 {
@@ -190,6 +200,7 @@ img {
 }
 .about .col-lg-5 p, .about .col-md-10 p {
   padding: 20px;
+  margin: 10px;
   font-size: 1.9rem;
   font-weight: 600;
   border-style: solid;

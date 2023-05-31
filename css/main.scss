@@ -80,9 +80,20 @@ img {
     display: block;
 }
 
+.api {
+    display: inline-block;
+    justify-content: center;
+    
+}
+
 .count
 {
-    font: 800 40px system-ui;
+    font: 800 40px system-ui;    
+}
+
+.borderline
+{
+    border: 5px outset var(--orange);
 }
 
 /* Rows Behavior in Global */
@@ -224,7 +235,9 @@ img {
     }
 
     .right {
+    
         p {
+            text-align: start;
             font-size: 1.5rem;
         }
     }
@@ -248,6 +261,7 @@ img {
 
         p {
             padding: 20px;
+            margin: 10px;
             font-size: 1.9rem;
             font-weight: 600;
             border-style: solid;
