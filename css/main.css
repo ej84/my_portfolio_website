@@ -175,8 +175,8 @@ img {
 .about .left {
   left: 150px;
 }
-.about .right {
-  right: -250px;
+.about .right p {
+  font-size: 1.5rem;
 }
 .about .row .col-lg-5, .about .col-md-10 {
   align-items: center;
