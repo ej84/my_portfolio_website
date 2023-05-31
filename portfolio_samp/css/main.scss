@@ -1,0 +1,396 @@
+*
+{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+// root Variables
+:root {
+    --title-color: #fff;
+    --text-color: #000;
+    --back-color: #9991ccc5;
+    --special-color: #FFA500;
+    --grey-color-1: #b2becd;
+    --grey-color-2: #454e56;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Home Background */
+body
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    span {
+        color: var(--special-color);
+    }
+
+    &::before
+    {
+        content: "";
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio_bg.jpg");
+        background-size:cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+}
+
+/* Navbar */
+.nav .nav-link
+{
+    font-size: 0.9rem;
+    background-color: transparent;
+    text-decoration: none;
+
+    &:link, &:visited {
+        color: var(--title-color);
+    }
+
+    &:hover, &:active {
+        color: var(--special-color);
+    }
+
+}
+
+.nav-link-sns, .nav-link-sns:hover
+{
+    font-size: 1.0rem;
+    color: var(--title-color);
+    background-color: transparent;
+}
+
+/* Home */
+
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: var(--title-color);
+}
+
+/* Buttons */
+
+.btn-warning
+{
+    background-color: var(--special-color) !important;
+    a {
+        color: var(--title-color) !important;
+        text-decoration: none; }
+}
+
+.btn-outline-light
+{
+    a {
+        color: var(--title-color) !important;
+        text-decoration: none;
+    }
+
+    a:hover, &:hover {
+        color: var(--special-color) !important;
+        text-decoration: none;
+    }
+
+}
+
+/* Portfolio Sections */
+
+.about, .resume, .service, .portfolio, .blogs, .contact
+{
+    height: 100vh;
+    width: 100%;
+
+    color: var(--text-color);
+
+    h2{
+        padding: 3.0rem;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .bg-text{
+        color: transparent;
+        -webkit-text-fill-color: var(--title-color);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--back-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: all .4s ease-in-out;
+        z-index: -1;
+        transform: translate(-60%, -70%);
+        font-weight: 550;
+        font-size: 4.9rem;
+    }
+}
+
+/* About */
+.about-wrapper
+{
+    height:100vh;
+    width:100%;
+}
+
+.about-left
+{
+    position: absolute;
+
+    .col-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        border-left: 1px solid;
+        border-color: var(--special-color);
+    }
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+.about-right
+{
+    position: relative;
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+/* Skills */
+.skills {
+    padding-bottom: 4rem;
+    .progress-bars {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        .progress-bar {
+            display: flex;
+            flex-direction: column;
+            .progress-title {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .progress-con {
+                display: flex;
+                align-items: center;
+                .progress-stat {
+                    font-weight: 600;
+                }
+                .progress {
+                    width: 100%;
+                    height: .45rem;
+                    background-color: var(--grey-color-2);
+                    margin-left: 1rem;
+                    position: relative;
+                    .progress-display {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        background-color: var(--special-color);
+                        transition: all .4s ease-in-out;
+                        width: 60%;
+                        //animation: progress 2.0s;
+                        &.active {
+                            animation: progress 2.0s;
+                        }
+                    }
+
+                    .python {
+                        width: 92%;
+                    }
+
+                    .java {
+                        width: 65%;
+                    }
+
+                    .sql {
+                        width: 77%;
+                    }
+
+                    .html {
+                        width: 89%;
+                    }
+
+                    .javascript {
+                        width: 72%;
+                    }
+
+                    .php {
+                        width: 83%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Animation Variables */
+
+// Fade in right
+.fadeInRight
+{
+    img {
+        background-size: cover;
+        display: inline-block;
+        margin: 2 2.5rem;
+        animation: fadeInRight;
+        animation-duration: 2.0s;
+    }
+}
+
+// Fade in up
+.fadeInUp 
+{
+    p {
+        animation: fadeInUp ease 1.5s;
+    }
+}
+
+// Fade in down
+.fadeInDown
+{
+    h1{
+        animation: fadeInDown ease 2.0s;
+        font-size: 4.0rem;
+        font-weight: 700;
+    }
+}
+
+// Type writer
+.typewriter
+{
+    h2{
+        width: auto;
+        display: inline-block;
+        overflow: hidden;
+        border-right: .15em solid var(--special-color);
+        white-space: nowrap;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: .05em;
+        animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        font-size: 2.0rem;
+        font-weight: 600;
+    }
+    
+}
+
+// Reveal Animation
+.reveal
+{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for animation */
+
+// Fade in down
+@keyframes fadeInDown
+{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Fade in top
+
+@keyframes fadeInUp
+{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Typing
+@keyframes typing
+{
+    from { max-width: 0% }
+    to { max-width: 24em; }
+  }
+
+// Cursor Blink
+@keyframes blink-caret
+{
+    from, to { border-color: transparent }
+    50% { border-color: var(--special-color); }
+}
+
+// Progress Bar
+@keyframes progress
+{
+    from {
+        width: 0%;
+    }
+}
+
+/* Media Queries */
+/*@media (prefers-reduced-motion: no-preference) {
+    .progress-animation {
+        animation: progress 2.0s;
+    }
+  }*/
+
+
+
+  canvas {
+    //display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: slateblue;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  
+  /* ---- stats.js ---- */
+/*
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    //-webkit-user-select: none;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+*/
