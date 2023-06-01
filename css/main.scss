@@ -222,7 +222,8 @@ img {
 
 @media only screen and (max-device-width: 576px) and (orientation: portrait) {
     #section {
-        width: 95%;
+        height: 250vh;
+        width: 100%;
         //position: relative;
         display: inline;
 
@@ -562,14 +563,30 @@ img {
         font-size: 1.2rem;
         text-align: center;
         border: 5px outset var(--orange);
+
     }
 
 }
 
 @media screen and (max-width:576px) and (orientation: portrait) {
     .contact .contact-form {
-        //display: inline;
+        
         width:75%;
+        input[type="text"]
+        {
+            display:inline-block;
+            font-size:15px;
+        }
+        input[type="email"]
+        {
+            display: inline-block;
+            font-size:15px;
+        }
+        textarea
+        {
+            display: inline-block;
+            font-size:15px;
+        }
     }
 }
 
