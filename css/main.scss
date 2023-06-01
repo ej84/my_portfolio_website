@@ -31,8 +31,6 @@ html
 /* Home Background */
 body
 {
-    padding: 0px;
-    margin: 0px;
     //position: relative;
     height: 100%;
     width: 100%;
@@ -140,6 +138,7 @@ img {
 
 .nav-link-sns, .nav-link-sns:hover
 {
+    display: block;
     font-size: 1.0rem;
     color: var(--white);
     background-color: transparent;
@@ -223,7 +222,7 @@ img {
 
 @media only screen and (max-device-width: 576px) and (orientation: portrait) {
     #section {
-        position: relative;
+        //position: relative;
         display: inline;
     }
     /*section .row{
@@ -235,7 +234,6 @@ img {
     #section {
         position: relative;
         display: inline;
-        
     }
     /*section .row{
         position: relative;
@@ -694,9 +692,10 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 90%;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
+  z-index: -1;
 }
