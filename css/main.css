@@ -172,8 +172,9 @@ img {
   font-size: 4.3rem;
 }
 
-@media only screen and (max-device-width: 390px) and (orientation: portrait) {
+@media only screen and (max-device-width: 576px) and (orientation: portrait) {
   #section {
+    position: relative;
     display: inline;
   }
   /*section .row{
