@@ -141,14 +141,14 @@ img {
 
 /* Sections to be customized */
 #section {
-  display: flex;
+  display: block;
   height: 140vh;
   width: 100%;
   color: var(--black);
   text-align: center;
 }
 #section h2 {
-  padding: 2.5rem;
+  padding: 2.4rem;
   position: relative;
   text-transform: uppercase;
   font-size: 4.4rem;
@@ -175,11 +175,20 @@ img {
   #section {
     display: inline;
   }
+  #section h2 {
+    font-size: 3rem;
+  }
+  #section .bg-text {
+    top: 25%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-55%, -80%);
+  }
   /*section .row{
       position: relative;
   }*/
 }
-@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+@media only screen and (max-device-width: 915px) and (orientation: landscape) {
   #section {
     position: relative;
     display: inline;
@@ -430,16 +439,15 @@ img {
 .contact .contact-form {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 50%;
   font-size: 1.2rem;
   text-align: center;
   border: 5px outset var(--orange);
 }
 
-@media screen and (max-width: 390) {
+@media screen and (max-width: 576px) and (orientation: portrait) {
   .contact .contact-form {
-    display: fixed;
-    width: auto;
+    width: 70%;
   }
 }
 /* Animation Variables */
