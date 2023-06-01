@@ -173,6 +173,7 @@ img {
 
 @media only screen and (max-device-width: 576px) and (orientation: portrait) {
   #section {
+    width: 95%;
     display: inline;
   }
   #section h2 {
@@ -447,7 +448,7 @@ img {
 
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .contact .contact-form {
-    width: 70%;
+    width: 75%;
   }
 }
 /* Animation Variables */

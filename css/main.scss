@@ -222,6 +222,7 @@ img {
 
 @media only screen and (max-device-width: 576px) and (orientation: portrait) {
     #section {
+        width: 95%;
         //position: relative;
         display: inline;
 
@@ -568,7 +569,7 @@ img {
 @media screen and (max-width:576px) and (orientation: portrait) {
     .contact .contact-form {
         //display: inline;
-        width:70%;
+        width:75%;
     }
 }
 
