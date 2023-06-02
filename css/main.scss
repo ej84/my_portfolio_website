@@ -92,7 +92,8 @@ img {
 
 .borderline
 {
-    border: 5px outset var(--orange);
+    border: 8px outset var(--orange);
+    
 }
 
 /* Rows Behavior in Global */
@@ -198,8 +199,6 @@ img {
         font-size: 4.4rem;
         font-weight: 700;
         font-style: italic;
-        //text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-        //text-shadow: 1px 1px 1px #000, 2px 2px 1px #000, 3px 3px 1px #000;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
@@ -259,7 +258,6 @@ img {
 {
 
     .profile {
-    
         p {
             text-align: start;
             font-size: 1.5rem;
@@ -269,27 +267,40 @@ img {
     .row .col-lg-5, .col-md-10 {
         
         align-items: center;
-        //position: relative;
+        position: relative;
         justify-content: center;
         text-align: center;
     }
 
+    .align_left {
+        position: absolute;
+        top: 29%;
+        left: 5%;
+    }
+
+    .align_right {
+        position:relative;
+        right: -22%;
+    }
+
     .col-lg-5, .col-md-10 {
-        //padding: 20px;
-        //margin: 20px;
+        padding: 5px;
+        margin: 5px;
         //position: relative;
         //height: 50vh;
-        display: grid;
-        grid-gap: 1.5rem;
+        //display: grid;
+        //grid-gap: 1.5rem;
         align-self: center;
+        border-style: solid;
+        border-radius: 100%;
+        border-color: var(--orange);
 
         p {
-            padding: 20px;
-            margin: 10px;
-            font-size: 1.9rem;
+            display: block;
+            padding: 1.2rem;
+            margin: 1.2rem;
+            font-size: 1.7rem;
             font-weight: 600;
-            border-style: solid;
-            border-color: var(--orange);
             text-align: center;
         }
 
@@ -315,26 +326,36 @@ img {
 .resume
 {
 
-    .nav-tabs {
-        --bs-nav-tabs-border-width: 0.2rem !important;
-        --bs-nav-tabs-border-color: var(--orange) !important;
-        --bs-nav-tabs-link-hover-border-color: var(--orange) !important;
-        --bs-nav-tabs-link-active-border-color: var(--orange) !important;
-    }
+    .resume-box {
+        width: 90%;
+        height: 70vh;
+        border: 8px solid var(--orange);
 
-    .education, .experience {
-        .list-group {
-            span {
-                font-size: 2.3rem;
-                font-weight: 600;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
-
+        .nav-tabs {
+            width: 80%;
+            --bs-nav-tabs-border-width: 0.5rem !important;
+            --bs-nav-tabs-border-color: var(--orange) !important;
+            --bs-nav-tabs-link-hover-border-color: var(--orange) !important;
+            --bs-nav-tabs-link-active-border-color: var(--orange) !important;
         }
+    
+        .education, .experience {
+            .list-group {
+                span {
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+    
+            }
+        }
+
     }
+
 
 }
 
@@ -618,8 +639,6 @@ img {
 // Type writer
 .wrap
 {
-    //width: auto;
-    //display: flex;
     overflow: hidden;
     border-right: .15em solid var(--orange);
     white-space: nowrap;
@@ -627,7 +646,6 @@ img {
     text-align: center;
     letter-spacing: .05em;
     animation:
-    //typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
     font-size: 2.0rem;
     font-weight: 600;
@@ -673,13 +691,6 @@ img {
         opacity: 1;
     }
 }
-
-// Typing
-@keyframes typing
-{
-    from { max-width: 0% }
-    to { max-width: 24em; }
-  }
 
 // Cursor Blink
 @keyframes blink-caret

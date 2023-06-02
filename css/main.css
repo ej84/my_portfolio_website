@@ -74,7 +74,7 @@ img {
 }
 
 .borderline {
-  border: 5px outset var(--orange);
+  border: 8px outset var(--orange);
 }
 
 /* Rows Behavior in Global */
@@ -206,21 +206,33 @@ img {
 }
 .about .row .col-lg-5, .about .col-md-10 {
   align-items: center;
+  position: relative;
   justify-content: center;
   text-align: center;
 }
+.about .align_left {
+  position: absolute;
+  top: 29%;
+  left: 5%;
+}
+.about .align_right {
+  position: relative;
+  right: -22%;
+}
 .about .col-lg-5, .about .col-md-10 {
-  display: grid;
-  grid-gap: 1.5rem;
+  padding: 5px;
+  margin: 5px;
   align-self: center;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: var(--orange);
 }
 .about .col-lg-5 p, .about .col-md-10 p {
-  padding: 20px;
-  margin: 10px;
-  font-size: 1.9rem;
+  display: block;
+  padding: 1.2rem;
+  margin: 1.2rem;
+  font-size: 1.7rem;
   font-weight: 600;
-  border-style: solid;
-  border-color: var(--orange);
   text-align: center;
 }
 .about .row .col-lg-3 {
@@ -234,18 +246,25 @@ img {
   }
 }
 
-.resume .nav-tabs {
-  --bs-nav-tabs-border-width: 0.2rem !important;
+.resume .resume-box {
+  width: 90%;
+  height: 70vh;
+  border: 8px solid var(--orange);
+}
+.resume .resume-box .nav-tabs {
+  width: 80%;
+  --bs-nav-tabs-border-width: 0.5rem !important;
   --bs-nav-tabs-border-color: var(--orange) !important;
   --bs-nav-tabs-link-hover-border-color: var(--orange) !important;
   --bs-nav-tabs-link-active-border-color: var(--orange) !important;
 }
-.resume .education .list-group span, .resume .experience .list-group span {
+.resume .resume-box .education .list-group span, .resume .resume-box .experience .list-group span {
   font-size: 2.3rem;
   font-weight: 600;
 }
-.resume .education .list-group p, .resume .experience .list-group p {
+.resume .resume-box .education .list-group p, .resume .resume-box .experience .list-group p {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* Skills */
@@ -512,14 +531,6 @@ img {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes typing {
-  from {
-    max-width: 0%;
-  }
-  to {
-    max-width: 24em;
   }
 }
 @keyframes blink-caret {
