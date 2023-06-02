@@ -177,6 +177,9 @@ img {
     width: 100%;
     display: inline;
   }
+  #section .home .typewrite h2 {
+    font-size: 1.5rem;
+  }
   #section h2 {
     font-size: 3rem;
   }
@@ -195,19 +198,7 @@ img {
     position: relative;
     display: inline;
   }
-  /*section .row{
-      position: relative;
-  }*/
 }
-/*
-@media screen and (min-width: 768px)
-{
-    #section {
-        justify-content: center;
-        height: 150vh;
-        width: 100%;
-    }
-}*/
 /* About */
 .about .profile p {
   text-align: start;
@@ -483,16 +474,14 @@ img {
   font-weight: 700;
 }
 
-.typewriter h2 {
-  width: auto;
-  display: inline-block;
+.wrap {
   overflow: hidden;
   border-right: 0.15em solid var(--orange);
   white-space: nowrap;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 0.05em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: blink-caret 0.75s step-end infinite;
   font-size: 2rem;
   font-weight: 600;
 }

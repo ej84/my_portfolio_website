@@ -227,6 +227,10 @@ img {
         //position: relative;
         display: inline;
 
+        .home .typewrite h2 {
+            font-size: 1.5rem;
+        }
+
         h2 {
             font-size: 3.0rem;
         }
@@ -248,19 +252,7 @@ img {
         position: relative;
         display: inline;
     }
-    /*section .row{
-        position: relative;
-    }*/
 }
-/*
-@media screen and (min-width: 768px)
-{
-    #section {
-        justify-content: center;
-        height: 150vh;
-        width: 100%;
-    }
-}*/
 
 /* About */
 .about
@@ -624,24 +616,21 @@ img {
 }
 
 // Type writer
-.typewriter
+.wrap
 {
-    h2{
-        width: auto;
-        display: inline-block;
-        overflow: hidden;
-        border-right: .15em solid var(--orange);
-        white-space: nowrap;
-        margin: 0 auto;
-        text-align: center;
-        letter-spacing: .05em;
-        animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-        font-size: 2.0rem;
-        font-weight: 600;
-    }
-    
+    //width: auto;
+    //display: flex;
+    overflow: hidden;
+    border-right: .15em solid var(--orange);
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: .05em;
+    animation:
+    //typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    font-size: 2.0rem;
+    font-weight: 600;
 }
 
 // Reveal Animation
