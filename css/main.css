@@ -236,7 +236,7 @@ img {
     font-size: 17px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .about .align_left {
     display: inline;
     position: relative;
