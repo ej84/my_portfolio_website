@@ -24,7 +24,7 @@
 html
 {
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
+    //overflow-x: hidden !important;
 }
 
 
@@ -80,11 +80,6 @@ img {
     display: block;
 }
 
-.api {
-    display: inline-block;
-    justify-content: center;
-}
-
 .count
 {
     font: 800 40px system-ui;    
@@ -92,7 +87,7 @@ img {
 
 .borderline
 {
-    border: 8px outset var(--orange);
+    border: 7px outset var(--orange);
     
 }
 
@@ -185,7 +180,7 @@ img {
 
 #section
 {
-
+    
     display: block;
     height: 140vh;
     width: 100%;
@@ -221,6 +216,7 @@ img {
 
 @media screen and (max-device-width: 576px) and (orientation: portrait) {
     #section {
+        overflow-x: hidden;
         height: 250vh;
         width: 100%;
         position: relative;
@@ -250,7 +246,7 @@ img {
     #section {
         position: relative;
         display: inline;
-
+        overflow-x: hidden;
     }
 }
 
@@ -274,17 +270,32 @@ img {
     }
 
     .align_left {
-        position: fixed;
-        top: 29%;
-        left: 5%;
+        position: absolute;
+        top: 24%;
+        left: 12%;
     }
 
     .align_right {
         position:relative;
-        right: -22%;
+        display: flex;
+        left: 15%;
+        height: 100%;
+        .borderline {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            display: relative;
+            
+        }
     }
 
     @media (max-device-width: 576px) and (orientation: portrait) {
+        .align_left {
+            display: inline;
+            position: relative;
+        }
+    }
+
+    @media (min-device-width: 576px) and (max-device-width: 882px) and (orientation: portrait) {
         
         
 
@@ -296,35 +307,32 @@ img {
         }
 
         .align_right {
-            ul li{
-                width: 70%;
-
-            }
-            p {
-                font-size: 17px;
-            }
-            left: 0%;
+            position: relative;
+            right: 5%
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1180px) {
+    @media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation:landscape) {
+        
         .align_left {
             display: inline;
             position: relative;
+            left: 15%;
         }
 
         .align_right {
+            display: flex;
             position: relative;
-            top: -350px;
+            //top: -350px;
         }
 
 
-
+/*
         .achievements {
-            height: 80vh;
+            
             position: relative;
-            top: -350px;
-        }
+            //top: -350px;
+        }*/
 
         
     }

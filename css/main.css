@@ -74,7 +74,7 @@ img {
 }
 
 .borderline {
-  border: 8px outset var(--orange);
+  border: 7px outset var(--orange);
 }
 
 /* Rows Behavior in Global */
@@ -221,10 +221,8 @@ img {
   justify-content: center;
   text-align: center;
 }
-.about .align_left {
-  position: fixed;
-  top: 29%;
-  left: 5%;
+.about .col-lg-4 .align_left {
+  position: relative;
 }
 .about .align_right {
   position: relative;

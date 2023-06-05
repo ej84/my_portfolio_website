@@ -78,6 +78,7 @@ body
 img {
     max-width: 100%;
     display: block;
+    
 }
 
 .api {
@@ -92,7 +93,7 @@ img {
 
 .borderline
 {
-    border: 8px outset var(--orange);
+    border: 7px outset var(--orange);
     
 }
 
@@ -273,10 +274,11 @@ img {
         text-align: center;
     }
 
-    .align_left {
-        position: fixed;
-        top: 29%;
-        left: 5%;
+    .col-lg-4 .align_left {
+        position: relative;
+        
+        //top: 29%;
+        //left: 5%;
     }
 
     .align_right {
