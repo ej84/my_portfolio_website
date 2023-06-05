@@ -211,13 +211,19 @@ img {
   text-align: center;
 }
 .about .align_left {
-  position: absolute;
+  position: fixed;
   top: 29%;
   left: 5%;
 }
 .about .align_right {
   position: relative;
   right: -22%;
+}
+@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+  .about .align_left, .about .align_right {
+    display: inline !important;
+    position: relative;
+  }
 }
 .about .col-lg-5, .about .col-md-10 {
   padding: 5px;

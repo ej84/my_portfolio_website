@@ -273,7 +273,7 @@ img {
     }
 
     .align_left {
-        position: absolute;
+        position: fixed;
         top: 29%;
         left: 5%;
     }
@@ -281,6 +281,13 @@ img {
     .align_right {
         position:relative;
         right: -22%;
+    }
+
+    @media only screen and (max-device-width: 576px) and (orientation: portrait) {
+        .align_left, .align_right {
+            display:inline !important;
+            position: relative;
+        }
     }
 
     .col-lg-5, .col-md-10 {
