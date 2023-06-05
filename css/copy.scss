@@ -320,9 +320,20 @@ img {
             left: 15%;
         }
 
+        .profile {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .borderline {
+            padding: 10px;
+        }
+
         .align_right {
-            display: flex;
+            display: inline;
             position: relative;
+
             //top: -350px;
         }
 

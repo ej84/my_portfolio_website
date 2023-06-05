@@ -264,8 +264,14 @@ img {
     position: relative;
     left: 15%;
   }
+  .about .profile p {
+    font-size: 0.9rem;
+  }
+  .about .borderline {
+    padding: 10px;
+  }
   .about .align_right {
-    display: flex;
+    display: inline;
     position: relative;
   }
 }
