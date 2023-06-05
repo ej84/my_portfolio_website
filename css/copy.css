@@ -246,7 +246,7 @@ img {
     font-size: 17px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1180px) {
   .about .align_left {
     display: inline;
     position: relative;
@@ -596,4 +596,4 @@ canvas {
   background-size: cover;
   background-position: 100% 100%;
   z-index: -1;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=copy.css.map */
