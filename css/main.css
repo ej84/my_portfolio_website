@@ -220,9 +220,25 @@ img {
   right: -22%;
 }
 @media only screen and (max-device-width: 576px) and (orientation: portrait) {
-  .about .align_left, .about .align_right {
+  .about .align_left {
     display: inline !important;
     position: relative;
+    left: -5%;
+  }
+  .about .align_right {
+    left: 0%;
+  }
+  .about .align_right ul li {
+    width: 70%;
+  }
+  .about .align_right p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-device-width: 915px) and (orientation: landscape) {
+  .about .algin_left {
+    display: inline !important;
+    position: relative !important;
   }
 }
 .about .col-lg-5, .about .col-md-10 {

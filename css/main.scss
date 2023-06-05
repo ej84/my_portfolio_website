@@ -284,9 +284,32 @@ img {
     }
 
     @media only screen and (max-device-width: 576px) and (orientation: portrait) {
-        .align_left, .align_right {
-            display:inline !important;
+        
+        
+
+        .align_left {
+            display: inline !important;
             position: relative;
+        
+            left: -5%;
+        }
+
+        .align_right {
+            ul li{
+                width: 70%;
+
+            }
+            p {
+                font-size: 17px;
+            }
+            left: 0%;
+        }
+    }
+
+    @media only screen and (max-device-width: 915px) and (orientation: landscape) {
+        .algin_left {
+            display: inline !important;
+            position: relative !important;
         }
     }
 
