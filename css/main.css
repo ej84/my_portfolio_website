@@ -252,7 +252,6 @@ img {
   border: 8px solid var(--orange);
 }
 .resume .resume-box .nav-tabs {
-  width: 80%;
   --bs-nav-tabs-border-width: 0.5rem !important;
   --bs-nav-tabs-border-color: var(--orange) !important;
   --bs-nav-tabs-link-hover-border-color: var(--orange) !important;
