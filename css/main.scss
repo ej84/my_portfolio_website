@@ -219,11 +219,11 @@ img {
 
 }
 
-@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+@media (max-device-width: 576px) /*and (orientation: portrait)*/ {
     #section {
         height: 250vh;
         width: 100%;
-        //position: relative;
+        position: relative;
         display: inline;
 
         .home .typewrite h2 {
@@ -283,7 +283,7 @@ img {
         right: -22%;
     }
 
-    @media only screen and (max-device-width: 576px) and (orientation: portrait) {
+    @media (max-device-width: 576px) and (orientation: portrait) {
         
         
 
@@ -306,11 +306,23 @@ img {
         }
     }
 
-    @media only screen and (max-device-width: 915px) and (orientation: landscape) {
-        .algin_left {
-            display: inline !important;
-            position: relative !important;
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+        .align_left {
+            display: inline;
+            position: relative;
         }
+
+        .align_right {
+            position: relative;
+            top: -350px;
+        }
+
+        .achievements {
+            position: relative;
+            top: -350px;
+        }
+
+        
     }
 
     .col-lg-5, .col-md-10 {

@@ -171,10 +171,11 @@ img {
   font-size: 4.3rem;
 }
 
-@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+@media (max-device-width: 576px) {
   #section {
     height: 250vh;
     width: 100%;
+    position: relative;
     display: inline;
   }
   #section .home .typewrite h2 {
@@ -219,7 +220,7 @@ img {
   position: relative;
   right: -22%;
 }
-@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+@media (max-device-width: 576px) and (orientation: portrait) {
   .about .align_left {
     display: inline !important;
     position: relative;
@@ -235,10 +236,18 @@ img {
     font-size: 17px;
   }
 }
-@media only screen and (max-device-width: 915px) and (orientation: landscape) {
-  .about .algin_left {
-    display: inline !important;
-    position: relative !important;
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+  .about .align_left {
+    display: inline;
+    position: relative;
+  }
+  .about .align_right {
+    position: relative;
+    top: -350px;
+  }
+  .about .achievements {
+    position: relative;
+    top: -350px;
   }
 }
 .about .col-lg-5, .about .col-md-10 {
