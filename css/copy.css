@@ -85,7 +85,8 @@ img {
 }
 
 /* Columns Behavior in Global */
-.col {
+[class*=col-] {
+  justify-content: center;
   align-self: center;
   text-align: center;
 }
@@ -192,8 +193,6 @@ img {
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
   #section {
     position: relative;
-    display: inline;
-    overflow-x: hidden;
   }
 }
 /* About */
@@ -260,9 +259,12 @@ img {
             }*/
   }
   .about .align_left {
-    display: inline;
+    display: block;
     position: relative;
-    left: 15%;
+    left: 0%;
+  }
+  .about .align_left img {
+    width: 70%;
   }
   .about .profile p {
     font-size: 0.9rem;
@@ -271,7 +273,7 @@ img {
     padding: 10px;
   }
   .about .align_right {
-    display: inline;
+    display: block;
     position: relative;
   }
 }

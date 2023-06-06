@@ -109,8 +109,9 @@ img {
 
 /* Columns Behavior in Global */
 
-.col
+[class*="col-"]
 {
+    justify-content: center;
     align-self: center;
     text-align: center;
 }
@@ -245,8 +246,7 @@ img {
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
     #section {
         position: relative;
-        display: inline;
-        overflow-x: hidden;
+        //display: inline;
     }
 }
 
@@ -315,9 +315,12 @@ img {
     @media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation:landscape) {
         
         .align_left {
-            display: inline;
+            display: block;
             position: relative;
-            left: 15%;
+            img {
+                width: 70%;
+            }
+            left: 0%;
         }
 
         .profile {
@@ -331,7 +334,7 @@ img {
         }
 
         .align_right {
-            display: inline;
+            display: block;
             position: relative;
 
             //top: -350px;
