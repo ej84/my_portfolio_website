@@ -259,7 +259,7 @@ img {
             }*/
   }
   .about .align_left {
-    display: block;
+    display: flex;
     position: relative;
     left: 0%;
   }
