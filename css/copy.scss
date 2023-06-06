@@ -246,7 +246,7 @@ img {
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
     #section {
         position: relative;
-        //display: inline;
+        display: inline;
     }
 }
 
@@ -315,10 +315,10 @@ img {
     @media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation:landscape) {
         
         .align_left {
-            display: flex;
+            display: block;
             position: relative;
             img {
-                width: 100%;
+                width: auto;
                 height: auto;
             }
             left: 0%;
@@ -335,9 +335,11 @@ img {
         }
 
         .align_right {
-            display: block;
-            position: relative;
-
+            display: inline;
+            left: 5%;
+            //position: relative;
+            width:40%;
+            height:10%;
             //top: -350px;
         }
 

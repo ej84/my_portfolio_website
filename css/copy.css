@@ -193,6 +193,7 @@ img {
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
   #section {
     position: relative;
+    display: inline;
   }
 }
 /* About */
@@ -259,12 +260,12 @@ img {
             }*/
   }
   .about .align_left {
-    display: flex;
+    display: block;
     position: relative;
     left: 0%;
   }
   .about .align_left img {
-    width: 100%;
+    width: auto;
     height: auto;
   }
   .about .profile p {
@@ -274,8 +275,10 @@ img {
     padding: 10px;
   }
   .about .align_right {
-    display: block;
-    position: relative;
+    display: inline;
+    left: 5%;
+    width: 40%;
+    height: 10%;
   }
 }
 .about .col-lg-5, .about .col-md-10 {
