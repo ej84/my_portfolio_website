@@ -20,13 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<!-- particles.js container -->
-<div id="particles-js"></div>
+
 <body class="entire">
   <div class="container-fluid">
   <!-- Navbar-->
     <header class="header">
-      <div class="row align-items-center">
+      <div class="row">
          <div class="col-10">
            <nav class="navbar navbar-expand-lg">
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,16 +51,16 @@
     <section>
     <!-- Home -->
     <div class="container home mt-lg-5">
+      <div class="row">
+       <!-- particles.js container -->
+       <div id="particles-js"></div>
         <div class="row mt-lg-5">
-            <div class="col-lg-10 justify-content-center align-self-end text-center mt-lg-5 mt-sm-auto fadeInDown">
-                <h1>Hello World! <span>My</span> name is <span>Richard Jeong</span>.</h1>
+            <div class="col-lg-10 mt-lg-5 mt-sm-auto fadeInDown">
+              <h1>Hello World! <span>My</span> name is <span>Richard</span>.</h1>
             </div>
-        </div>
-
-        <div class="row mt-lg-5">
-          <div class="col-lg-10 col-md-5 text-center mt-3 typewriter">
-            <h2>I'm a<div class="typewrite" data-period="2000" data-type='[ "Web Developer.", "UI/UX Designer.", "App Creator.", "Data Engineer." ]'> <span class="wrap"></span></h2>
-          </div>
+            <div class="col-lg-10 col-md-5 text-center mt-3 typewriter">
+              <h2>I'm <div class="typewrite" data-period="2000" data-type='[ "Web Developer.", "UI/UX Designer.", "App Creator.", "Data Engineer." ]'> <span class="wrap"></span></h2>
+            </div>
         </div>
 
         <div class="row mt-4 mt-lg-5">
@@ -70,11 +69,11 @@
           </div>
         </div>
 
-        <div class="row mt-4 mt-lg-4">
-          <div class="col-4 text-end">
+        <div class="row mt-md-5">
+          <div class="col-4 col-lg-2 text-end">
             <button class="btn btn-warning"><a href="#contact">Contact Me</a></button>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-lg-2 text-start">
             <button class="btn btn-outline-light"><a href="#about">Read More</a></button>
           </div>
         </div>
@@ -107,6 +106,7 @@
             </button>
           </nav>
         </div>
+     </div>
     </div>
     </section>
   <!-- About -->
@@ -120,7 +120,7 @@
             </div>
           </div>
           <div class="container row justify-content-md-center">
-           <div class="col-lg-4 col-md-4 align_left">
+           <div class="col-md-4 align_left">
            <!-- About Left Side for Profile Image -->
             <!--<div class="col-md-5">-->
               <img src="img/portfoilo_picture.jpg">

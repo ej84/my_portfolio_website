@@ -25,27 +25,36 @@ html {
 
 /* Home Background */
 body {
-  height: 100%;
-  width: 100%;
   padding-top: 50px;
+  /* Navbar Behavior */
 }
 body h1, body h2 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0) !important;
+}
+body h1 {
+  font-size: 40px !important;
+}
+body h2 {
+  font-size: 35px;
 }
 body span {
   color: var(--orange);
 }
-body::before {
-  content: "";
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio_bg.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
+body .navbar .nav-link {
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+body .navbar .nav-link:link, body .navbar .nav-link:visited {
+  color: var(--white);
+}
+body .navbar .nav-link:hover, body .navbar .nav-link:active {
+  color: var(--orange);
+}
+body .nav-link-sns, body .nav-link-sns:hover {
+  display: block;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
 }
 body .navbar-toggler {
   border-color: var(--white);
@@ -54,34 +63,15 @@ body .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*
-.entire{
-    background-color:bisque;
-}*/
 img {
   max-width: 100%;
   height: auto;
-}
-
-.count {
-  font: 800 40px system-ui;
-}
-
-.borderline {
-  border: 7px outset var(--orange);
 }
 
 /* Rows Behavior in Global */
 .row {
   justify-content: center;
   align-items: center;
-}
-.row .py-5 {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-.row .mt-5 {
-  margin-top: 5rem !important;
 }
 
 /* Columns Behavior in Global */
@@ -91,31 +81,15 @@ img {
   text-align: center;
 }
 
-/* Navbar Behavior */
-.navbar .nav-link {
-  justify-content: center;
-  font-size: 1rem;
-  background-color: transparent;
-}
-.navbar .nav-link:link, .navbar .nav-link:visited {
-  color: var(--white);
-}
-.navbar .nav-link:hover, .navbar .nav-link:active {
-  color: var(--orange);
+.count {
+  font: 800 40px system-ui;
 }
 
-.nav-link-sns, .nav-link-sns:hover {
-  display: block;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: transparent;
-}
-
-/* Main Contents */
 /* Home for introduction page */
 .home {
-  height: 120vh;
-  color: var(--white);
+  width: 100%;
+  height: 100vh;
+  color: var(--white) !important;
   /* Buttons */
 }
 .home .btn-warning {
@@ -133,12 +107,24 @@ img {
   color: var(--orange) !important;
   text-decoration: none;
 }
+.home::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio_bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
 
 /* Sections to be customized */
 #section {
   display: block;
-  height: 140vh;
   width: 100%;
+  height: 100vh;
   color: var(--black);
   text-align: center;
 }
@@ -166,66 +152,19 @@ img {
   font-size: 4.3rem;
 }
 
-@media screen and (max-device-width: 576px) and (orientation: portrait) {
-  #section {
-    overflow-x: hidden;
-    height: 250vh;
-    width: 100%;
-    position: relative;
-    display: inline;
-  }
-  #section .home .typewrite h2 {
-    font-size: 1.5rem;
-  }
-  #section h2 {
-    font-size: 3rem;
-  }
-  #section .bg-text {
-    top: 25%;
-    left: 50%;
-    font-size: 3rem;
-    transform: translate(-55%, -80%);
-  }
-  /*section .row{
-      position: relative;
-  }*/
-}
-@media only screen and (max-device-width: 915px) and (orientation: landscape) {
-  #section {
-    position: relative;
-    display: inline;
-  }
-}
 /* About */
-.about {
-  /*
-      @media screen and (max-width: 768px)
-      {
-          .about {
-              display: flex;
-              width: auto;
-          }
-      }*/
-}
 .about .profile p {
   text-align: start;
   font-size: 1.5rem;
 }
-.about .row .col-lg-5, .about .col-md-10 {
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-}
 .about .align_left {
-  position: absolute;
+  position: relative;
   top: 24%;
-  left: 12%;
+  left: 1%;
 }
 .about .align_right {
   position: relative;
-  display: flex;
-  left: 15%;
+  left: 5%;
   height: 100%;
 }
 .about .align_right .borderline {
@@ -233,73 +172,13 @@ img {
   padding-bottom: 30px;
   display: relative;
 }
-@media (max-device-width: 576px) and (orientation: portrait) {
-  .about .align_left {
-    display: inline;
-    position: relative;
-  }
-}
-@media (min-device-width: 576px) and (max-device-width: 882px) and (orientation: portrait) {
-  .about .align_left {
-    display: inline;
-    position: relative;
-    left: -5%;
-  }
-  .about .align_right {
-    position: relative;
-    right: 5%;
-  }
-}
-@media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) {
-  .about {
-    /*
-            .achievements {
-
-                position: relative;
-                //top: -350px;
-            }*/
-  }
-  .about .align_left {
-    display: block;
-    position: relative;
-    left: 0%;
-  }
-  .about .align_left img {
-    max-width: 20% !important;
-    height: auto;
-  }
-  .about .profile p {
-    font-size: 0.9rem;
-  }
-  .about .borderline {
-    padding: 10px;
-  }
-  .about .align_right {
-    display: inline;
-    left: 5%;
-    width: 40%;
-    height: 10%;
-  }
-}
-.about .col-lg-5, .about .col-md-10 {
-  padding: 5px;
-  margin: 5px;
-  align-self: center;
-  border-style: solid;
-  border-radius: 100%;
-  border-color: var(--orange);
-}
-.about .col-lg-5 p, .about .col-md-10 p {
+.about p {
   display: block;
   padding: 1.2rem;
   margin: 1.2rem;
   font-size: 1.7rem;
   font-weight: 600;
   text-align: center;
-}
-.about .row .col-lg-3 {
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 .resume .resume-box {
@@ -385,13 +264,6 @@ img {
   width: 83%;
 }
 
-@media screen and (max-width: 768px) {
-  .skills .progress-bars {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-  }
-}
 /* Services */
 .service .services {
   display: inline-block;
@@ -416,12 +288,6 @@ img {
 }
 .service .services p {
   font-size: 1.2rem;
-}
-@media screen and (max-width: 768px) {
-  .service .service {
-    display: flex;
-    height: 5px;
-  }
 }
 
 /* Portfolio */
@@ -495,12 +361,6 @@ img {
   opacity: 1;
   transform: scale(1);
 }
-@media screen and (max-width: 768px) {
-  .portfolio .portfolios {
-    display: flex;
-    width: auto;
-  }
-}
 
 /* Contact Me */
 .contact .contact-form {
@@ -512,6 +372,116 @@ img {
   border: 5px outset var(--orange);
 }
 
+/* Responsive styles */
+/* Extra small devices (phones, 0 - 576px) */
+@media screen and (max-width: 576px) {
+  /* Your CSS styles for extra small devices go here */
+}
+/* Small devices (landscape phones, 576px - 768px) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* Your CSS styles for small devices go here */
+}
+/* Medium devices (tablets, 768px - 992px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* Your CSS styles for medium devices go here */
+}
+/* Large devices (desktops, 992px - 1200px) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Your CSS styles for large devices go here */
+}
+/* Extra large devices (large desktops, 1200px and above) */
+@media screen and (min-width: 1200px) {
+  /* Your CSS styles for extra large devices go here */
+}
+@media (max-device-width: 576px) and (orientation: portrait) {
+  .align_left {
+    display: inline;
+    position: relative;
+  }
+}
+@media (min-device-width: 576px) and (max-device-width: 882px) and (orientation: portrait) {
+  .align_left {
+    display: inline;
+    position: relative;
+    left: -5%;
+  }
+  .align_right {
+    position: relative;
+    right: 5%;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) {
+  .align_left {
+    display: block;
+    position: relative;
+    left: 0%;
+  }
+  .align_left img {
+    max-width: 20%;
+    height: auto;
+  }
+  .profile p {
+    font-size: 0.9rem;
+  }
+  .borderline {
+    padding: 10px;
+  }
+  .align_right {
+    display: inline;
+    left: 5%;
+    width: 40%;
+    height: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills .progress-bars {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    display: flex;
+    height: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolios {
+    display: flex;
+    width: auto;
+  }
+}
+@media screen and (max-device-width: 576px) and (orientation: portrait) {
+  #section {
+    overflow-x: hidden;
+    height: 250vh;
+    width: 100%;
+    position: relative;
+    display: inline;
+  }
+  #section .home .typewrite h2 {
+    font-size: 1.5rem;
+  }
+  #section h2 {
+    font-size: 3rem;
+  }
+  #section .bg-text {
+    top: 25%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-55%, -80%);
+  }
+  /*section .row{
+      position: relative;
+  }*/
+}
+@media only screen and (max-device-width: 915px) and (orientation: landscape) {
+  #section {
+    position: relative;
+    display: inline;
+  }
+}
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .contact .contact-form {
     width: 75%;
@@ -610,7 +580,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 85%;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
