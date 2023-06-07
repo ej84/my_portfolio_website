@@ -569,17 +569,17 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1180px) and (orientation:landscape) {
     
     #section {
-        display: block;
-        position: relative ;
-        width: 80%;
-        height: 250vh;
+        display: block !important;
+        position: relative !important;
+        width: 80% !important;
+        height: 300vh !important;
     }
 
     .borderline {
         padding: 10px;
     }
 
-    .profile_text {
+    .about .profile_text {
         display: block;
         right: 25px;
 
