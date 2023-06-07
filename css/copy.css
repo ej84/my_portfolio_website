@@ -453,22 +453,17 @@ img {
 @media screen and (min-width: 1200px) {
   /* Your CSS styles for extra large devices go here */
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) {
-  .align_left {
-    display: block;
-    position: relative;
-    left: 0%;
-  }
-  .align_left img {
-    max-width: 20%;
-    height: auto;
+@media screen and (min-width: 768px) and (max-width: 1180px) and (orientation: landscape) {
+  #section {
+    width: 100%;
+    height: 200vh;
   }
   .borderline {
     padding: 10px;
   }
   .profile_text {
     display: block;
-    right: 12px;
+    right: 15px;
   }
   .profile_text li {
     display: block;
@@ -527,12 +522,13 @@ img {
       position: relative;
   }*/
 }
+/*
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
-  #section {
-    position: relative;
-    display: inline;
-  }
-}
+    #section {
+        position: relative;
+        display: inline;
+    }
+}*/
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .contact .contact-form {
     width: 75%;
