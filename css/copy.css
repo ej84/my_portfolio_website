@@ -157,20 +157,19 @@ img {
   text-align: start;
   font-size: 1.5rem;
 }
-.about .align_left {
+.about .profile_picture {
   position: relative;
-  top: 24%;
-  left: 1%;
+  top: -5px;
+  border: 5px dashed var(--orange);
+  padding: 1px;
+  margin: auto;
 }
-.about .align_right {
+.about .profile_text {
   position: relative;
-  left: 5%;
-  height: 100%;
+  right: 150px;
 }
-.about .align_right .borderline {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  display: relative;
+.about .profile_text p {
+  text-align: end;
 }
 .about p {
   display: block;

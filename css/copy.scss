@@ -202,21 +202,20 @@ img {
         }
     }
 
-    .align_left {
+    .profile_picture {
         position: relative;
-        top: 24%;
-        left: 1%;
+        top: -5px;
+        border: 5px dashed var(--orange);
+        padding: 1px;
+        margin: auto;
+        
     }
 
-    .align_right {
+    .profile_text {
         position:relative;
-        left: 5%;
-        height: 100%;
-        .borderline {
-            padding-top: 50px;
-            padding-bottom: 30px;
-            display: relative;
-            
+        right: 150px;
+        p {
+            text-align: end;
         }
     }
 
