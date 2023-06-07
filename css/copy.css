@@ -437,9 +437,9 @@ img {
 /* Small devices (landscape phones, 576px - 768px) */
 @media screen and (max-width: 915px) and (orientation: landscape) {
   /* Your CSS styles for small devices go here */
-  .about .profile_text {
-    display: flex;
-  }
+  /*.about .profile_text {
+    display:flex;
+  }*/
 }
 /* Medium devices (tablets, 768px - 992px) */
 @media screen and (min-width: 768px) and (max-width: 992px) {
