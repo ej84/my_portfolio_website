@@ -570,8 +570,8 @@ img {
     
     #section {
         display: block;
-        position: relative;
-        width: 100%;
+        position: relative ;
+        width: 80%;
         height: 250vh;
     }
 
@@ -584,8 +584,8 @@ img {
         right: 25px;
 
         li {
-            display: block;
-            padding: 10px;
+            display: flex;
+            padding: 5px;
             text-align: start;
         }
     }

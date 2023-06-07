@@ -457,7 +457,7 @@ img {
   #section {
     display: block;
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 250vh;
   }
   .borderline {
@@ -468,8 +468,8 @@ img {
     right: 25px;
   }
   .profile_text li {
-    display: block;
-    padding: 10px;
+    display: flex;
+    padding: 5px;
     text-align: start;
   }
 }
