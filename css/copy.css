@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -79,6 +80,14 @@ img {
   justify-content: center;
   align-self: center;
   text-align: center;
+}
+
+.circle {
+  position: absolute;
+  border: solid 2px var(--lightPurple);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .count {
@@ -372,6 +381,9 @@ img {
 /* Extra small devices (phones, 0 - 576px) */
 @media screen and (max-width: 576px) {
   /* Your CSS styles for extra small devices go here */
+  body {
+    padding-top: 10px;
+  }
   #section {
     display: block;
     width: 100%;

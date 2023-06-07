@@ -20,6 +20,8 @@
     --lightPurple: #9991ccc5;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 /* html has smooth scroll behavior and non overflow-x that only allows vertical scroll. */
 html
 {
@@ -100,6 +102,16 @@ img {
     justify-content: center;
     align-self: center;
     text-align: center;
+}
+
+.circle {
+	position: absolute;
+    border: solid 2px var(--lightPurple);
+    //background-color: var(--orange);
+	width: 40px; 
+	height: 40px; 
+    border-radius: 50%;
+    
 }
 
 .count
@@ -464,6 +476,11 @@ img {
 /* Extra small devices (phones, 0 - 576px) */
 @media screen and (max-width: 576px) {
     /* Your CSS styles for extra small devices go here */
+
+    body {
+        padding-top: 10px;
+    }
+
     #section
     {
         display: block;
