@@ -460,12 +460,9 @@ img {
     width: 100%;
     height: 300vh !important;
   }
-  .borderline {
-    padding: 10px;
-  }
   .about .profile_text {
     display: block;
-    right: 25px;
+    right: 15px;
   }
   .about .profile_text li {
     display: flex;
