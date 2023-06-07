@@ -539,12 +539,17 @@ img {
         }
     }
 }
-  
-  /* Small devices (landscape phones, 576px - 768px) */
-  @media screen and (min-width: 576px) and (max-width: 768px) {
-    /* Your CSS styles for small devices go here */
+
+
+/* Small devices (landscape phones, 576px - 768px) */
+@media screen and (max-width: 915px) and (orientation: landscape) {
+  /* Your CSS styles for small devices go here */
+  .about .profile_text {
+    display:flex;
   }
+}
   
+
   /* Medium devices (tablets, 768px - 992px) */
   @media screen and (min-width: 768px) and (max-width: 992px) {
     /* Your CSS styles for medium devices go here */
@@ -559,31 +564,7 @@ img {
   @media screen and (min-width: 1200px) {
     /* Your CSS styles for extra large devices go here */
   }
-  
 
-@media (max-device-width: 576px) and (orientation: portrait) {
-    .align_left {
-        display: inline;
-        position: relative;
-    }
-}
-
-@media (min-device-width: 576px) and (max-device-width: 882px) and (orientation: portrait) {
-    
-    
-
-    .align_left {
-        display: inline;
-        position: relative;
-    
-        left: -5%;
-    }
-
-    .align_right {
-        position: relative;
-        right: 5%
-    }
-}
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation:landscape) {
     
@@ -597,23 +578,28 @@ img {
         left: 0%;
     }
 
-    .profile {
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
     .borderline {
         padding: 10px;
     }
 
-    .align_right {
-        display: inline;
-        left: 5%;
-        //position: relative;
-        width:40%;
-        height:10%;
-        //top: -350px;
+    .profile_text {
+        display: block;
+        right: 12px;
+
+        li {
+            display: block;
+            padding: 10px;
+            text-align: start;
+        }
+
+        p {
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: start;
+        }
     }
     
 }
