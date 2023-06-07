@@ -453,7 +453,7 @@ img {
 @media screen and (min-width: 1200px) {
   /* Your CSS styles for extra large devices go here */
 }
-@media screen and (max-width: 1180px) and (orientation: landscape) {
+@media screen and (max-width: 850px) and (orientation: landscape) {
   #section {
     display: block;
     position: relative;
@@ -470,6 +470,14 @@ img {
   .about .profile_text li {
     display: flex;
     padding: 5px;
+    text-align: start;
+  }
+  .about .profile_text p {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
     text-align: start;
   }
 }

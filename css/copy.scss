@@ -566,7 +566,7 @@ img {
   }
 
 
-@media screen and (max-width: 1180px) and (orientation:landscape) {
+@media screen and (max-width: 850px) and (orientation:landscape) {
     
     #section {
         display: block;
@@ -586,6 +586,15 @@ img {
         li {
             display: flex;
             padding: 5px;
+            text-align: start;
+        }
+
+        p {
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+            font-weight: 600;
             text-align: start;
         }
     }
