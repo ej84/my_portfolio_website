@@ -463,19 +463,11 @@ img {
   }
   .profile_text {
     display: block;
-    right: 15px;
+    right: 25px;
   }
   .profile_text li {
     display: block;
     padding: 10px;
-    text-align: start;
-  }
-  .profile_text p {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 600;
     text-align: start;
   }
 }
