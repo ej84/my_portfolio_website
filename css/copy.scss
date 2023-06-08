@@ -612,6 +612,13 @@ img {
 
 @media screen and (max-width: 850px) and (orientation:landscape) {
     
+    .home {
+        height: 100%;
+        &::before {
+            height: 150vh;
+        }
+    }
+
     #section {
         display: block;
         position: relative;

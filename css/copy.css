@@ -489,6 +489,12 @@ img {
   /* Your CSS styles for extra large devices go here */
 }
 @media screen and (max-width: 850px) and (orientation: landscape) {
+  .home {
+    height: 100%;
+  }
+  .home::before {
+    height: 150vh;
+  }
   #section {
     display: block;
     position: relative;
