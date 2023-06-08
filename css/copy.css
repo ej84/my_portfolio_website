@@ -16,6 +16,7 @@
   --yellow-3: #ffcc25ee;
   --grey-1: #b2becd;
   --grey-2: #454e56;
+  --grey-3: #f2f2f2;
   --lightPurple: #9991ccc5;
 }
 
@@ -33,7 +34,7 @@ body h1, body h2 {
   text-shadow: 2px 2px 4px rgb(0, 0, 0) !important;
 }
 body h1 {
-  font-size: 40px !important;
+  font-size: 40px;
 }
 body h2 {
   font-size: 35px;
@@ -41,15 +42,31 @@ body h2 {
 body span {
   color: var(--orange);
 }
+body .navbar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+body .navbar.color-change {
+  background-color: var(--black);
+}
+body .navbar.color-change .nav-link:link, body .navbar.color-change .nav-link:visited {
+  color: var(--white);
+}
 body .navbar .nav-link {
   font-size: 1.3rem;
   background-color: transparent;
 }
 body .navbar .nav-link:link, body .navbar .nav-link:visited {
-  color: var(--white);
+  color: var(--black);
 }
 body .navbar .nav-link:hover, body .navbar .nav-link:active {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 body .nav-link-sns, body .nav-link-sns:hover {
   display: block;
@@ -97,7 +114,7 @@ img {
 /* Home for introduction page */
 .home {
   width: 100%;
-  height: 100vh;
+  height: 89vh;
   color: var(--white) !important;
   /* Buttons */
 }
@@ -159,6 +176,10 @@ img {
   transform: translate(-60%, -70%);
   font-weight: 550;
   font-size: 4.3rem;
+}
+
+#about {
+  background-color: var(--grey-3);
 }
 
 /* About */
@@ -621,7 +642,7 @@ img {
     border-color: transparent;
   }
   50% {
-    border-color: var(--orange);
+    border-color: var(--white);
   }
 }
 @keyframes progress {

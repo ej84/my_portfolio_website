@@ -155,6 +155,16 @@ jQuery(document).ready(function() {
 
 });
 
+/* Navbar Scroll */
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 800) {
+    $('.navbar').addClass('color-change');
+  } else {
+    $('.navbar').removeClass('color-change');
+  }
+}); 
+
 /* ---- particles config ---- */
 
 particlesJS("particles-js", {
