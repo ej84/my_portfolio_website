@@ -554,12 +554,11 @@ img {
         }
 
         .profile_text {
-            display:block;
             right: -12px;
-
+            top: 20px;
             li {
                 display: flex;
-                padding: 15px;
+                padding: 5px;
                 text-align: start;
             }
 
@@ -567,7 +566,7 @@ img {
                 display: block;
                 padding: 0px;
                 margin: 0px;
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: 600;
                 text-align: start;
             }

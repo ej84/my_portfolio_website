@@ -446,19 +446,19 @@ img {
     margin: auto;
   }
   .about .profile_text {
-    display: block;
     right: -12px;
+    top: 20px;
   }
   .about .profile_text li {
     display: flex;
-    padding: 15px;
+    padding: 5px;
     text-align: start;
   }
   .about .profile_text p {
     display: block;
     padding: 0px;
     margin: 0px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     text-align: start;
   }
