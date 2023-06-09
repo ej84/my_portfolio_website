@@ -145,7 +145,7 @@ img {
 
 .count
 {
-    font: 800 40px system-ui;
+    font: 300 30px system-ui;
 }
 
 /* Home for introduction page */
@@ -298,7 +298,6 @@ img {
 
     }
 
-
 }
 
 
@@ -321,8 +320,8 @@ img {
                 display: flex;
                 align-items: center;
                 .progress-stat {
-                    font-size: 2rem !important;
-                    font-weight: 600;
+                    font-size: 1.2rem;
+                    font-weight: 700;
                 }
                 .progress {
                     width: 100%;
@@ -339,7 +338,7 @@ img {
                         transition: all .4s ease-in-out;
                         width: 60%;
                         &.active {
-                            animation: progress 2.0s;
+                            animation: progress 1.2s;
                         }
                     }
 

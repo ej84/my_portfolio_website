@@ -111,7 +111,7 @@ img {
 }
 
 .count {
-  font: 800 40px system-ui;
+  font: 300 30px system-ui;
 }
 
 /* Home for introduction page */
@@ -253,8 +253,8 @@ img {
   align-items: center;
 }
 .skills .progress-bars .progress-bar .progress-con .progress-stat {
-  font-size: 2rem !important;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .skills .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
@@ -273,7 +273,7 @@ img {
   width: 60%;
 }
 .skills .progress-bars .progress-bar .progress-con .progress .progress-display.active {
-  animation: progress 2s;
+  animation: progress 1.2s;
 }
 .skills .progress-bars .progress-bar .progress-con .progress .python {
   width: 92%;

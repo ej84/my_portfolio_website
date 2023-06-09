@@ -115,7 +115,7 @@ tabToClick.addEventListener("click", function() {
 
   for(var i=0; i < numbers.length; i++) {
 
-    count_number(numbers[i], 0, numbers[i].innerText, 2000);
+    count_number(numbers[i], 0, numbers[i].innerText, 1200);
   
   }
 
