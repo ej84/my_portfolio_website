@@ -1,0 +1,56 @@
+$primary-color: orange;
+$secondary-color: lightpurple;
+$text-color: black;
+$bg-color: white;
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: $primary-color;
+  text-align: center;
+  padding: 20px;
+  
+  h1 {
+    font-size: 36px;
+    color: $text-color;
+  }
+  
+  p {
+    font-size: 18px;
+    color: $text-color;
+  }
+}
+
+.content {
+  padding: 40px 0;
+  
+  .grid-box {
+    background-color: $secondary-color;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    h2 {
+      color: $text-color;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: $text-color;
+    }
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  text-align: center;
+  padding: 20px;
+  
+  p {
+    color: $text-color;
+  }
+}

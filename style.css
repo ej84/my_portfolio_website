@@ -1,0 +1,45 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+}
+.header h1 {
+  font-size: 36px;
+  color: black;
+}
+.header p {
+  font-size: 18px;
+  color: black;
+}
+
+.content {
+  padding: 40px 0;
+}
+.content .grid-box {
+  background-color: lightpurple;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.content .grid-box h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.content .grid-box p {
+  color: black;
+}
+
+.footer {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+}
+.footer p {
+  color: black;
+}/*# sourceMappingURL=style.css.map */
