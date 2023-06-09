@@ -257,10 +257,10 @@ img {
     }
 
     .achievements p {
-        display: inline;
-        padding: 1.2rem;
-        margin: 1.2rem;
-        font-size: 1.7rem;
+        display: block;
+        padding: 2.0rem;
+        margin: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 800;
         text-align: center;
     }
@@ -566,18 +566,17 @@ img {
                 display: block;
                 padding: 0px;
                 margin: 0px;
-                font-size: 17px;
-                font-weight: 600;
+                font-size: 15px;
                 text-align: start;
             }
         }
         
         .achievements {
-            p {
-                display: inline;
-                padding: 1.2rem;
-                margin: 1.2rem;
-                font-size: 1.1rem;
+            p{
+                display: block;
+                padding: 1.5rem;
+                margin: 1.5rem;
+                font-size: 1.5rem;
                 font-weight: 800;
                 text-align: center;
             }
