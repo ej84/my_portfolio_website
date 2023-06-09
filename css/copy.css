@@ -193,7 +193,7 @@ img {
 }
 .about .profile_text {
   position: relative;
-  top: -120px;
+  top: -80px;
   right: 150px;
 }
 .about .profile_text p {
@@ -506,6 +506,7 @@ img {
   .about .profile_text {
     display: block;
     right: 15px;
+    top: 30px;
   }
   .about .profile_text li {
     display: flex;
