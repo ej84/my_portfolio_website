@@ -205,9 +205,9 @@ img {
     text-align: center; 
 
     h2 {
-        padding: 2.4rem;
+        padding: 2.2rem;
         position: relative;
-        font-size: 4.4rem;
+        font-size: 2.9rem;
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
@@ -246,14 +246,17 @@ img {
 
     .profile_text {
         position:relative;
+        top: -120px;
         right: 150px;
         p {
             display: block;
-            text-align: end;
+            margin: 5px;
+            font-size: 19px;
+            text-align: start;
         }
     }
 
-    p {
+    .achievements p {
         display: inline;
         padding: 1.2rem;
         margin: 1.2rem;
@@ -378,6 +381,7 @@ img {
         display: inline-block;
         height: 100%;
         width: 100%;
+        background-color: var(--white);
         font-size: 2.0rem;
         text-align: center;
         border: 3px solid var(--orange);
