@@ -493,7 +493,7 @@ img {
     height: 100%;
   }
   .home::before {
-    height: 150vh;
+    height: 180vh;
   }
   #section {
     display: block;

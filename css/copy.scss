@@ -242,7 +242,6 @@ img {
         border: 5px dashed var(--orange);
         padding: 1px;
         margin: auto;
-        
     }
 
     .profile_text {
@@ -615,7 +614,7 @@ img {
     .home {
         height: 100%;
         &::before {
-            height: 150vh;
+            height: 180vh;
         }
     }
 
