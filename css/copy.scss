@@ -313,14 +313,14 @@ img {
             display: flex;
             flex-direction: column;
             .progress-title {
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 font-weight: 600;
             }
             .progress-con {
                 display: flex;
                 align-items: center;
                 .progress-stat {
-                    font-size: 1.2rem;
+                    font-size: 1.0rem;
                     font-weight: 700;
                 }
                 .progress {

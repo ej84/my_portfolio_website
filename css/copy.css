@@ -245,7 +245,6 @@ img {
   flex-direction: column;
 }
 .skills .progress-bars .progress-bar .progress-title {
-  text-transform: uppercase;
   font-weight: 600;
 }
 .skills .progress-bars .progress-bar .progress-con {
@@ -253,7 +252,7 @@ img {
   align-items: center;
 }
 .skills .progress-bars .progress-bar .progress-con .progress-stat {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 .skills .progress-bars .progress-bar .progress-con .progress {
