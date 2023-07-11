@@ -1,0 +1,17 @@
+.pixel-art {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+  }
+  
+  .pixel.black {
+    background-color: black;
+  }
+  
